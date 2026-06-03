@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dear Rika 💌</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Musik -->
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Hati -->
+
+<div id="hearts"></div>
+
+<!-- COVER -->
+
+<section id="cover">
+
+<div class="cover-card">
+
+<img src="unnamed.jpg" class="cover-photo">
+
+<h1>Dear Rika 💌</h1>
+
+<h2>Happy Birthday 🎂</h2>
+
+<p class="date">
+07 June 2026
+</p>
+
+<div id="coverTyping" class="typing-box">
+</div>
+
+<button class="open-btn" onclick="openBook()">
+Open My Scrapbook ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- BUKU -->
+
+<section id="bookSection" class="hidden">
+
+<div class="book">
+
+<!-- HALAMAN KIRI -->
+
+<div class="page-left">
+
+<div class="photo-frame">
+
+<img id="pagePhoto" src="photo1.jpg">
+
+</div>
+
+</div>
+
+<!-- HALAMAN KANAN -->
+
+<div class="page-right">
+
+<h2 id="pageTitle">
+🌷 A Little Birthday Note 🎂
+</h2>
+
+<div id="pageText" class="page-text">
+</div>
+
+<div class="navigation">
+
+<button id="prevBtn" onclick="prevPage()">
+← Previous
+</button>
+
+<button id="nextBtn" onclick="nextPage()">
+Next →
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HALAMAN BALASAN -->
+
+<section id="replySection" class="hidden">
+
+<div class="reply-card">
+
+<h2>💌 Before I Close This Book ❤️</h2>
+
+<div id="lastMessage">
+
+Mungkin aku bukan orang yang kamu harap buat hadir di hidup kamu.
+
+Tapi aku bisa ngetreat kamu layaknya orang yang aku harap di hidup aku.
+
+Terima kasih ya.
+
+Untuk semua obrolan,
+semua kenangan,
+semua tawa,
+dan semua cerita yang pernah kita lewati.
+
+Kalau suatu hari nanti kita benar-benar berjalan ke arah yang berbeda,
+aku harap kamu tetap menemukan banyak alasan untuk bahagia.
+
+Dan aku juga berharap,
+setiap tanggal 07 Juni,
+akan selalu jadi hari yang indah buat kamu.
+
+Happy Birthday, Rika. ❤️
+
+- Dari seseorang yang pernah menaruh banyak harapan pada namamu.
+
+</div>
+
+<textarea
+id="pesan"
+placeholder="Tulis sesuatu untukku...">
+</textarea>
+
+<button class="wa-btn" onclick="kirimWA()">
+Kirim ke WhatsApp ❤️
+</button>
+
+<button class="back-btn" onclick="backBook()">
+← Kembali ke Buku
+</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
